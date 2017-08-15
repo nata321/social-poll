@@ -1,2 +1,160 @@
-<a href="index.html">1</a>
-<a href="social-table.html">2</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="img/fivicon-social.jpg">
+    <title>Social poll</title>
+</head>
+<body>
+    <header>
+        <h1>Planeta Kino</h1>
+        <h2>Social Poll</h2>
+        <img src="img/planeta-kino.png" alt="planeta kino">
+        <p>Thank you for your agree to take a part in our social poll! We really care about ours clients and we are going to be better for you!</p>
+        <p>Please fill in forms below and press "Send".</p>
+    </header>
+    <main>
+        <form method="POST" action="https://formspree.io/https.ka@gmail.com">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <br>
+            
+            <label for="surname">Surname</label>
+            <br>
+            <input type="text" name="surname" id="surname" placeholder="Your surname" required>
+            <br>
+            
+            <label for="age">Age</label>
+            <br>
+            <input type="number" name="age" id="age" value="20" min="14" max="100" required>
+            <br>
+            
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email"  placeholder="Your mail" required>
+            <br>
+            
+            <label>Male
+                <input type="radio" name="gender" value="male" checked>
+            </label>
+            
+            <label>Female
+                <input type="radio" name="gender" value="female">
+            </label>
+            
+            <label>Other
+                <input type="radio" name="gender" value="other">
+            </label>
+            <br>
+            <label>Your city</label>
+            <br>
+            <select>
+                <option>Lviv</option>
+                <option>Odessa</option>
+                <option>Kiev</option>
+                <option>Sumi</option>
+            </select>
+            <br>
+            <label>Which of our moviehouse you prefer?</label>
+            <br>
+            <select>
+                <option>"Planeta kino" King Cross</option>
+                <option>"Planeta kino" Forum-Lviv</option>
+            </select>
+            <br>
+            <label>Which of our cinema rooms you prefer?</label>
+            <br>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>all</option>
+                <option>no one</option>
+            </select>
+            <br>
+            <label>Choose your favorite genre of movie:</label>
+            <br>
+            <select>
+                <option>Drama</option>
+                <option>Comedy</option>
+                <option>Mystery</option>
+                <option>Sci-Fi</option>
+                <option>Thriller</option>
+                <option>Action</option>
+                <option>Documentary</option>
+                <option> History</option>
+            </select>
+            <br>
+            
+            <label>Your favorite movies this summer:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="movie" value="movie">The Hitman's Bodyguard (2017)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="movie" value="movie">Logan Lucky (2017)
+            </label>
+            <br>
+             <label>
+                <input type="checkbox" name="movie" value="movie">Patti Cake$ (2017)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="movie" value="movie">Lemon (2017)
+            </label>
+            <br>
+            
+            <label>Your favorite animation this summer:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="animation"  value="animation">Despicable Me 3 (2017)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="animation" value="animation">The Boss Baby (2017)
+            </label>
+            <br>
+             <label>
+                <input type="checkbox" name="animation" value="animation">The Emoji Movie (2017)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="animation" value="animation">Cars 3 (2017)
+            </label>
+            <br>
+            
+            <label>Do you like our additional services?</label>
+            <br>
+            <label>
+                <input type="radio" name="close-question" value="yes" checked>
+                Yes
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="close-question" value="no">
+                No
+            </label>
+            <br>
+            
+            <label>You could write your opinion about our Film Festival</label>
+            <br>
+            <textarea  name="user-opinion" cols="50" rows="8"></textarea>
+            <br>
+            
+            <input type="submit" value="Send">
+            <input type="reset">
+        </form>
+        <p>Thank you for your time!</p>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">1</a>
+            <a href="social-table.html">2</a>
+        </nav>
+    </footer>
+</body>
+</html>
