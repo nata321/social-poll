@@ -16,7 +16,7 @@
         <p>Please fill in forms below and press "Send".</p>
     </header>
     <main>
-        <form method="POST" action="https://formspree.io/https.ka@gmail.com">
+        <form>
             <label for="name">Name</label>
             <br>
             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -38,20 +38,20 @@
             <br>
             
             <label>Male
-                <input type="radio" name="gender" value="male" checked>
+                <input id="male" type="radio" name="gender" value="male" checked>
             </label>
             
             <label>Female
-                <input type="radio" value="female" name="gender">
+                <input id="male" type="radio" value="female" name="gender">
             </label>
             
             <label>Other
-                <input type="radio" name="gender" value="other">
+                <input id="other" type="radio" name="gender" value="other">
             </label>
             <br>
             <label>Your city</label>
             <br>
-            <select name="city">
+            <select id="city" name="city">
                 <option>Lviv</option>
                 <option>Odessa</option>
                 <option>Kiev</option>
@@ -60,14 +60,14 @@
             <br>
             <label>Which of our moviehouse you prefer?</label>
             <br>
-            <select name="moviehouse">
+            <select id="moviehouse" name="moviehouse">
                 <option>"Planeta kino" King Cross</option>
                 <option>"Planeta kino" Forum-Lviv</option>
             </select>
             <br>
             <label>Which of our cinema rooms you prefer?</label>
             <br>
-            <select name="rooms">
+            <select id="rooms" name="rooms">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -77,7 +77,7 @@
             <br>
             <label>Choose your favorite genre of movie:</label>
             <br>
-            <select name="genre">
+            <select id="genre" name="genre">
                 <option>Drama</option>
                 <option>Comedy</option>
                 <option>Mystery</option>
@@ -142,10 +142,12 @@
             
             <label>You could write your opinion about our Film Festival</label>
             <br>
-            <textarea  name="user-opinion" cols="50" rows="8"></textarea>
+            <textarea id="opinion" name="user-opinion" cols="50" rows="8"></textarea>
             <br>
+            <h2 id="thanks" style="display:none;">Thank you!</h2>
+            <h2 id="incorrect" style="display:none;">Form incorrect!</h2>
             
-            <input type="submit" value="Send">
+            <input id="send" type="submit" value="Send">
             <input type="reset">
         </form>
         <p>Thank you for your time!</p>
@@ -156,5 +158,10 @@
             <a href="social-table.html">2</a>
         </nav>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/insex.js"></script>
 </body>
 </html>
