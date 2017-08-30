@@ -1,3 +1,18 @@
+// $(document).ready(function() {
+
+// $("#form").submit(function(){
+//   $.ajax ({
+//         url: "https://formspree.io/https.ka@gmail.com",
+//         method: "POST",
+//         dataType: "json",
+//         data:$(this).serialize()
+//   }).done(function(){
+//         $('form')[0].reset();
+//         $('#thanks').show();
+//   })
+//     return false;
+//     });
+// });
 $(function(){
   $('input[type=submit').click(sendData);
 });
@@ -21,7 +36,7 @@ function sendData(e) {
             moviehouse: $( "select#moviehouse option:checked" ).val(),
             rooms: $( "select#rooms option:checked").val(),
             genre: $( "select#genre option:checked").val(),
-            movie$animation: $( "input[type=checkbox]:checked").serialize(),
+            movie$animation: $("input[type=checkbox]:checked").serialize(),
             question: $( "input[type=radio][name=question]:checked" ).val(),
             opinion: $('#opinion').val()
         }
