@@ -36,7 +36,7 @@ function sendData(e) {
             moviehouse: $( "select#moviehouse option:checked" ).val(),
             rooms: $( "select#rooms option:checked").val(),
             genre: $( "select#genre option:checked").val(),
-            data: {inputs: $('form').serialize()},
+            movie$animation: $( "input[type=checkbox]:checked").serialize(),
             question: $( "input[type=radio][name=question]:checked" ).val(),
             opinion: $('#opinion').val()
         }
