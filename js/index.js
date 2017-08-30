@@ -1,6 +1,6 @@
 $(function(){
   $('input[type=submit').click(sendData);
-})
+});
 function sendData(e) {
     e.preventDefault();
     let movieOne = $('#movie-1').val();
@@ -11,6 +11,7 @@ function sendData(e) {
     let animationTwo = $('#animation-2').val();
     let animationThree = $('#animation-3').val();
     let animationFour = $('#animation-4').val();
+    
     if (!$('form')[0].checkValidity()) {
     $('#incorrect').show();
     return;
